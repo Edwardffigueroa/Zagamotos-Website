@@ -1,0 +1,608 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+     text-decoration: none;
+    
+}
+
+/*fonts*/
+
+.topHome >p{
+    font-size: 0.8em;
+/*    color: darkslategray;*/
+    font-weight: 400;
+}
+
+header a{
+    font-size: 0.8em;
+}
+
+h1{
+    font-size: 0.8em;
+}
+
+h2{
+    font-size: 0.8em;
+}
+
+h3{
+    font-size: 0.8em;
+}
+
+h4{
+    font-size: 0.8em;
+}
+
+p{
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+a{
+    font-size: 0.8em;
+    
+}
+
+
+.menuicons h2{
+    font-weight: 600;
+    color: darkslategray;
+}
+
+footer a{
+    color: lightgray;
+}
+
+
+
+
+
+/*---------------------*/
+
+body{
+    
+    background-color: #EDEDED;
+    
+}
+
+
+
+.voidHeader{
+    
+    width: 100%;
+    height: 129px;
+    
+    
+}
+
+.main{
+    
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    
+}
+
+header{
+    
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: white;
+    z-index: 100;
+    
+    box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.3);
+    
+}
+
+.toggle{
+    display: none;
+}
+
+.topHome{
+    
+/*    width: 70%;*/
+    
+/*    width: 100%;*/
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.topHome .logo{
+    
+/*    width: 30%;*/
+    display: flex;
+    flex-direction: row;
+/*    justify-content: center;*/
+    flex-wrap: nowrap;
+    
+    
+    
+}
+
+.topHome a> img{
+    
+/*    width: 16%;*/
+    width: 70%;
+    height: 100%;
+    
+}
+
+.redes{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.topHome .redes img{
+    width: 25px;
+    margin: 7px;
+}
+
+.topMenu{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    background-color: #B90B19;
+    
+}
+
+.topMenu ul{
+/*    margin-left: 5px;*/
+    display: flex;
+    flex-direction: row;
+}
+
+.topMenu ul li{
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+     padding: 10px;
+    list-style-type: none;
+    
+}
+
+.selectedM{
+    border-top: solid;
+    padding-bottom: 3px;
+    transition-duration: 0.8s;
+    
+}
+
+.topMenu ul >li:hover{
+    
+    background-color: darkred;
+    transition-duration: 0.8s;
+    
+}
+
+.topMenu ul li .line{
+    
+    height: 100%;
+    border-left-style: solid;
+    border-width: 1px;
+    margin-right: 10px;
+    
+}
+
+.topMenu ul li a{
+  
+    color: aliceblue;
+    padding-top: 3px;
+    
+}
+
+
+
+
+/*---------------------Banner*/
+
+.banner{
+    
+    
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.banner img{
+    
+/*    width: 70%;*/
+    height: 100%;
+    
+}
+
+.menuicons{
+    
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+ 
+}
+
+.iconMenu{
+    
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    flex-wrap: nowrap;
+    
+}
+
+.iconMenu:hover{
+    background-color: lightgray;
+      transition: all .3s linear;
+    
+}
+
+.iconMenu img{
+    width: 60%;
+    height: 100%;
+       margin: 15px;
+/*    padding: 20px;*/
+    
+}
+
+
+
+.iconMenu h2{
+    text-align: center;
+    
+}
+
+.menuDown{
+    
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 70%;
+    
+}
+
+.itemMenudown{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    width: 50%;
+    height: 28vh;
+
+    list-style-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-color: black;
+    
+    
+        
+}
+
+.ourMoto{
+        background-image: url(images/motos_img.jpg);
+    
+}
+
+.ourMoto img{
+    
+    margin: 15px;
+    opacity: 0.9;
+/*    visibility: hidden;*/
+    
+}
+/*
+.ourMoto img:hover{
+     opacity: 1.0;
+     transition: all .3s linear;
+}
+*/
+
+
+
+.puntov{
+      background-image: url(images/puntosv_img.jpg);
+}
+.puntov img{
+    
+    opacity: 0.9;
+    margin: 15px;
+    
+}
+
+.posvent{
+    
+         background-image: url(images/serviciospos_img.jpg);
+}
+.posvent img{
+    
+    opacity: 0.9;
+    margin: 15px;
+}
+
+.aliadosCom{
+        background-image: url(images/aliados_img.jpg);
+}
+
+.aliadosCom img{
+        
+    opacity: 0.9;
+    margin: 15px;
+}
+
+
+.itemMenudown h2{
+    
+     color: white;
+    
+}
+
+
+
+
+footer{
+    
+    width: 100%;
+    background-color: #68080C;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer_content{
+    
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.foo_menu{
+    
+    margin: 20px;
+    color: lightgray;
+    text-align: left;
+}
+
+.foo_menu img{
+    
+    margin: 10px 10px 10px 0px;
+    width: 50%;
+    height: 100%;
+    
+}
+
+footer a {
+    
+    display: flex;
+    
+}
+
+.foo_menu h3{
+    
+    margin-bottom: 10px;
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: solid;
+    border-width: 1px;
+
+}
+
+.footer_derechos p{
+    margin: 5px;
+}
+
+.footer_derechos{
+    
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: lightgrey;
+/*    padding-top: px;*/
+    margin-bottom: 10px;
+    border-top: solid;
+    border-width: 1px;
+    
+}
+
+
+/*-------------------------Responsive design------*/
+
+@media only screen and (max-width: 900px) {
+
+    .footer_derechos{
+        
+     width: 100%;   
+    flex-wrap: wrap;
+        
+    }
+    .banner{
+width: 100%;           
+    }
+    
+    .menuicons{
+        width: 100%;           
+        
+    }
+    
+    .menuDown{
+        width: 100%;    
+        
+    }
+    
+
+    .footer_content{
+        width: 100%;
+    }
+    
+    .topHome p{
+        
+         display: none;    
+    }
+    
+    .iconsMotosDown img{
+        width: 100px;
+    }
+    .iconsMotosDown{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .topHome .logo{
+    
+    
+    justify-content: center;
+    
+
+    
+}
+    
+    .voidHeader{
+        height: 115px;
+    }
+    
+
+    .hidden{
+          display: none;    
+    }
+    
+    .topHome >img{
+        width: 60%;
+        
+    }
+    .topHome .redes{
+        
+        display: none;
+        
+    }
+    
+    .topHome p{
+        
+         display: none;    
+    }
+    
+    .topMenu {
+        
+/*        display: flex;*/
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        
+        display: none;
+/*        align-items: center;*/
+/*        background-color: black;*/
+        
+        
+        
+    }
+    
+    .topMenu ul{
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .toggle{
+        
+        display: block;
+        background-color: darkred;
+        text-align: right;
+    }
+    
+    .toggle img{
+        
+        width: 7%;
+        margin: 8px 18px;
+/*        width: 100%;*/
+    }
+    
+    .active{
+        
+        display: block;
+        transition-duration: 0.5s;
+        
+    }
+    
+}
+
+
+
+
+/*----------------banner slider----------*/
+
+.rslides {
+/*  position: relative;*/
+  list-style: none;
+  overflow: hidden;
+  width: 70%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+
+

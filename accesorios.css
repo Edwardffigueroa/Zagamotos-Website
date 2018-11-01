@@ -1,0 +1,94 @@
+.mainAccesorios{
+    
+    background-color: white;
+    
+    width: 70%;
+    
+    
+}
+.mainAccesorios a{
+    color: gray;
+}
+
+.gridAccesorios{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardviewAc{
+    
+    width: 20%;
+    border: solid;
+    border-width: 1px;
+    border-color: darkgray;
+    
+    text-align: center;
+    
+    margin: 10px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+   
+}
+
+
+.cardviewAc:hover{
+    
+     box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: all .15s linear;
+    
+}
+
+
+.cardviewAc img{
+    
+/*    max-width: 100%;*/
+    
+/*    width: 150px;*/
+    
+    padding: 20px 0px;
+    
+    width: 70%;
+    
+    max-height: 70%;
+    
+    margin: 15px;
+
+    
+}
+
+.cardviewAc p{
+    
+    width: 100%;
+    height: 30%;
+    color: darkslategray;
+    padding: 10px 0px;
+    background-color: lightgray;
+    font-weight: 400;
+    
+}
+
+
+@media only screen and (max-width: 900px) {
+    
+    .mainAccesorios{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    
+    .cardviewAc{
+        width: 40%;
+    }
+    
+}

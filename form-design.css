@@ -1,0 +1,110 @@
+.formulario{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    
+    
+    border-radius: 5px;
+/*    background-color: lightgray;*/
+    padding: 20px;
+    
+}
+
+.formulario spam{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+.formulario a{
+    color: darkslategray;
+}
+
+
+
+input[type=text], select {
+    
+    width: 50%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.8em;
+}
+
+input[list=sub], select {
+    width: 50%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.8em;
+}
+
+input[type=checkbox] {
+        
+    width: 20px;
+    height: 20px;
+}
+
+
+input[type=submit] {
+    width: 50%;
+    background-color: #FF0000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+       font-size: 0.8em;
+}
+
+input[type=submit]:hover {
+    background-color: #C60505;
+}
+
+textarea{
+       width: 50%;
+    height: 100px;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 0.8em;
+}
+
+select{
+    height: 40px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    input[type=submit] {
+        
+     width: 80%;   
+    }
+    input[type=text], select,textarea {
+        width: 80%;   
+        
+    }
+    
+    input[list=sub], select {
+           width: 80%;   
+    }
+}
+
+
+ 

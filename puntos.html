@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Zagamotos | Puntos </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,600i,700,800" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/flavicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+<!--    mapbox-->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
+
+
+    
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="puntos.css">
+</head>
+<body>
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="135168017028612"
+  theme_color="#B90B19"
+  logged_in_greeting="Hola! En que puedo ayudarte?"
+  logged_out_greeting="Hola! En que puedo ayudarte?">
+</div>
+     <div class="main">
+        <header>
+    
+ 
+       <div class="topHome">
+          
+           <a class="logo" href="index.html">
+           <img src="images/logo_header.png" alt="Zagamotos" href="index.html">
+<!--           <img src="images/akt_logo_blue.png" alt="">-->
+           </a>
+           <p><b>PBX:</b> (2) 695 9060</p>
+           <div class="redes"><p><b>SIGUENOS:</b></p> <a href="https://www.facebook.com/aktzagamotos/"><img src="images/fb_icon.png" alt=""></a>
+           <a href="https://www.instagram.com/aktzagamotos/"><img src="images/insta_icon.png" alt=""></a></div>
+<!--           <p><b>LÍNEA GRATUITA:</b> 01 8000 189 497</p>-->
+          
+           
+<!--           <img src="images/logos_top.png" alt="">-->
+           
+       </div>
+       
+       <div class="toggle"><img class="menuRes" src="images/menu_icon.png" alt=""></div>
+       
+       <div class="topMenu">
+          
+           <ul>
+              
+               <li><div class="line"></div><a class="" href="index.html">INICIO</a></li>
+               <li><div class="line"></div><a class="" href="motos.html">MOTOS</a></li>
+               <li><div class="line"></div><a class="selectedM" href="puntos.html">PUNTOS DE VENTA</a></li>
+               <li><div class="line"></div><a href="posventa.html">POSVENTA</a></li>
+               <li><div class="line"></div><a href="aliados.html">ALIADOS COMERCIALES</a></li>
+               <li><div class="line"></div><a href="contacto.html">CONTÁCTANOS</a></li>
+               
+           </ul>
+           
+       </div>
+       
+   </header>
+   
+<!------------------ Content   -------------->
+<div class="voidHeader"></div>
+
+<div class="mainPuntos">
+  
+  <h1>PUNTOS DE VENTA</h1>
+  
+  <style>
+      
+    .mapboxgl-popup {
+        max-width: 400px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+</style>
+  <div id="map"></div>
+   
+   <div class="titlesPoint hidden">
+       <h3 class="vallet-t">VALLE DEL CAUCA</h3>
+       <h3 class="ejecaf-t">EJE CAFETERO-PEREIRA</h3>
+       <h3 class="bogot-t">BOGOTÁ</h3>
+   </div>
+   
+   <div class="rviews-grid">
+       
+<!--       Valle-->
+       <div class="view-valle-grid">
+           
+              <div class="cardView  ">
+                 
+                  <h4 class="vallet">Zagamotos Cali</h4> 
+                  <p>Calle 70 Norte #4A-03 Esquina Local 1 <br>
+                  <b>Tel:</b> (2) 664 9447 <br>
+                  
+                   <i class="fab fa-whatsapp"></i>
+                  <a href="https://wa.me/573105645712  ">310 564 5712   </a>
+                  </p>
+                  
+                  <hr>
+                  
+                  <p>
+                  <b>Lu-Vi:</b> 7:30 a.m - 6:00 p.m <br>
+                  <b>Sá:</b> 8:00 a.m - 2:30 p.m
+                  </p>
+                  
+
+                  
+                  <p class="fot_card">
+                     <i>
+                      Sala de ventas <br>
+                      Servicio técnico <br>
+                      Venta de repuestos
+                      </i>
+
+                  </p>
+                  
+              </div>
+              
+              <div class="cardView">
+                 
+                  <h4 class="vallet">Zagamotos Cartago</h4> 
+                  <p>Carrera 9 # 9 – 99<br>
+                  <b>Tel:</b> (2) 210 9595 <br>
+                  
+                  <i class="fab fa-whatsapp"></i>
+                  <a href="https://wa.me/573102455218 ">310 245 5218  </a>
+                  </p>
+                  
+                  <hr>
+                  
+                  <p>
+                  <b>Lu-Vi:</b> 7:30 a.m - 6:00 p.m <br>
+                  <b>Sá:</b> 8:00 a.m - 1:00 p.m
+                  </p>
+                  
+<!--                  <hr>-->
+                  
+                  <p class="fot_card">
+                     <i>
+                      Sala de ventas <br>
+                      Servicio técnico <br>
+                      Venta de repuestos
+                      </i>
+
+                  </p>
+                  
+              </div>
+              
+              <div class="cardView">
+                 
+                  <h4 class="vallet">Zagamotos Tuluá</h4> 
+                  <p>Calle 26 # 26 – 76 <br>
+                  <b>Tel:</b> (2) 225 7136 <br>
+                  
+                  <i class="fab fa-whatsapp"></i>
+                  <a href="https://wa.me/573102452873 ">310 245 2873  </a>
+                  </p>
+                  
+                  <hr>
+                  
+                  <p>
+                  <b>Lu-Vi:</b> 7:30 a.m - 6:00 p.m <br>
+                  <b>Sá:</b> 8:00 a.m - 1:00 p.m
+                  </p>
+                  
+<!--                  <hr>-->
+                  
+                  <p class="fot_card">
+                     <i>
+                      Sala de ventas <br>
+                      Servicio técnico <br>
+                      Venta de repuestos
+                      </i>
+
+                  </p>
+                  
+              </div>
+               
+       </div>
+       
+       <!--       Pereira-->
+       <div class="view-valle-grid">
+           
+              <div class="cardView">
+                 
+                  <h4 class="ejecaf">Zagamotos La 30</h4> 
+                  <p>Av. 30 de agosto # 33 – 53 <br>
+                  <b>Tel:</b> (6) 326 7385 <br>
+                  <i class="fab fa-whatsapp"></i>
+                  <a href="https://wa.me/573102452847">310 245 2847  </a>
+                  
+                  </p>
+                  
+                  <hr>
+                  
+                  <p>
+                  <b>Lu-Vi:</b> 7:30 a.m - 6:00 p.m <br>
+                  <b>Sá:</b> 8:00 a.m - 1:00 p.m
+                  </p>
+                  
+
+                  
+                  <p class="fot_card">
+                     <i>
+                      Sala de ventas <br>
+                      Servicio técnico <br>
+                      Venta de repuestos
+                      </i>
+
+                  </p>
+                  
+              </div>
+              
+              <div class="cardView">
+                 
+                  <h4 class="ejecaf">Zagamotos La 21</h4> 
+                  <p>Calle 21 # 12-12 <br>
+                  <b>Tel:</b> (6) 341 3344 <br>
+                   <i class="fab fa-whatsapp"></i>
+                 <a href="https://wa.me/573214292727">321 429 2727 </a>
+                 
+                  </p>
+                  
+                  <hr>
+                  
+                  <p>
+                  <b>Lu-Vi:</b> 7:30 a.m - 6:00 p.m <br>
+                  <b>Sá:</b> 8:00 a.m - 1:00 p.m
+                  </p>
+                  
+                  <hr>
+                  
+                  <p class="fot_card">
+                     <i>
+                      Sala de ventas <br>
+                      Venta de repuestos
+                      </i>
+
+                  </p>
+                  
+              </div>
+                
+       </div>
+       
+       <!--       bogotá-->
+       <div class="view-valle-grid">
+           
+              <div class="cardView">
+                 
+                  <h4 class="bogot">Zagamotos Restrepo</h4> 
+                  <p>Av. Caracas # 20-01 Sur <br>
+                  <b>Tel:</b> (1) 745 6982 ext. 510-521 <br>
+                  
+                         <i class="fab fa-whatsapp"></i>
+                  <a href="https://wa.me/573214286593">321 428 6593 </a>
+                  </p>
+                  
+                  <hr>
+                  
+                  <p>
+                  <b>Lu-Vi:</b> 7:30 a.m - 6:00 p.m <br>    
+                  <b>Sá:</b> 8:00 a.m - 1:00 p.m
+                  </p>
+                  
+
+                  
+                  <p class="fot_card">
+                     <i>
+                      Sala de ventas <br>
+                      Servicio técnico <br>
+                      Venta de repuestos
+                      </i>
+
+                  </p>
+                  
+              </div>
+              
+              <div class="cardView">
+                 
+                  <h4 class="bogot">Zagamotos Héroes</h4> 
+                  <p>Av. Caracas # 76-01 <br>
+                  <b>Tel:</b> (1) 745 6982 ext. 505-506 <br>
+                  
+                        <i class="fab fa-whatsapp"></i>
+                  <a href="https://wa.me/573102463649">310 246 3649 </a>
+                  </p>
+                  
+                  <hr>
+                  
+                  <p>
+                  <b>Lu-Vi:</b> 7:30 a.m - 6:00 p.m <br>
+                  <b>Sá:</b> 8:00 a.m - 1:00 p.m
+                  </p>
+                  
+                  <hr>
+                  
+                  <p class="fot_card">
+                     <i>
+                      Sala de ventas <br>
+                      Servicio técnico <br>
+                      Venta de repuestos
+                      </i>
+
+                  </p>
+                  
+              </div>
+              
+               
+       </div>
+       
+       
+       
+   </div>
+   
+   
+    
+</div>
+ 
+ 
+ <!------------------ footer   -------------->
+  
+  <footer>
+    
+    <div class="footer_content">
+     
+      <div class="foo_menu hidden"><h3>MOTOS</h3>
+     
+        <div class="iconsMotosDown">
+           <a href="motos.html"><img src="images/akt_icon.png" alt=""></a>
+           <a href="motos.html"><img src="images/tvs_icon.png" alt=""></a>
+           </div>
+      </div>
+      
+      <div class="foo_menu hidden"><h3>PUNTOS DE VENTA</h3>
+      <p><a href="puntos.html">Bogotá</a></p><br>
+      <p><a href="puntos.html">Eje Cafetero</a></p><br> 
+      <p><a href="puntos.html">Valle del Cauca</a></p><br> 
+      
+      </div>
+      
+      <div class="foo_menu hidden"><h3>POSVENTA</h3>
+     <p><a href="servicio-tecnico.html">Servicio técnico</a></p><br>
+      <p><a href="accesorios.html">Accesorios</a></p><br> 
+      <p><a href="repuestos.html">Repuestos</a></p><br>     
+      </div>
+      
+      <div class="foo_menu hidden"><h3>ALIADOS COMERCIALES</h3>
+      <p><a href="aliados.html">Zagaseguros</a></p><br>
+      <p><a href="aliados.html">Tu Cuota</a></p>
+      </div>
+      
+      <div class="foo_menu"><h3>CONTÁCTANOS</h3>
+               <div class="redes"><a href="https://www.facebook.com/aktzagamotos/"><img src="images/fb_icon_white.png" alt=""></a>
+           <a href="https://www.instagram.com/aktzagamotos/"><img src="images/insta_icon_white.png" alt=""></a></div>
+      <p><b>PBX:</b> (2) 695 9060</p>
+      </div>
+      </div>
+      
+      <div class="footer_derechos">
+         
+          <p><a href="privacidad.pdf">Políticas de Privacidad</a></p>
+          <p><a href="tratamiento_datos.pdf">Términos y Condiciones</a></p>
+          <p id="copy">© Zagamotos. Todos los derechos reservados</p>
+          
+      </div>
+      
+<!--
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <script src="main.js"></script>
+-->
+
+      
+
+   </footer>
+   
+   
+    </div>
+    
+    
+       <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+         <script src="main.js"></script>
+         
+         <!-- <script src="https://maps.googleapis.com/maps/api/js"
+                async defer></script> -->
+<!--
+                
+                <script>
+                    
+                    $(function($) {
+                $(document).ready(function(){
+                    $('a.fancy').fancybox({
+                        type: 'image',
+                        padding: 0,
+                        scrolling: 'no',
+                        helpers : {
+                            overlay: {
+                                css: {'background-color': '#000'},
+                                opacity: 0.9
+                            },
+                            title : { type : 'inside' }
+                        }
+                    });
+                });
+            }(jQuery));
+
+            $(".nav a").on("click", function(){
+                $(".nav").find(".active").removeClass("active");
+                $(this).parent().addClass("active");
+            });
+
+            function initMap() {
+                
+                var latLng = {lat:3.4936985, lng:-76.519398};//cali
+                var latLng2 = {lat:4.745375, lng:-75.911260};//cartago
+                var latLng3 = {lat:4.084981, lng:-76.196365};//tulua 
+                var latLng4 = {lat:4.811944, lng:-75.707156};//la 30 
+                var latLng5 = {lat:4.810576, lng:-75.696419};//la 21 
+                var latLng6 = {lat:4.609690, lng:-74.075854};//caracas bogotá
+                var latLng7 = {lat:4.6647339, lng:-74.0613689};//caracas2 bogotá
+
+                var mapDiv = document.getElementById('mapa');
+
+                var map = new google.maps.Map(mapDiv, { center:{lat:4.423240, lng: -75.225427}, zoom: 7.5});
+
+                var image ='images/mapicon.png';
+                
+                var marker = new google.maps.Marker({position: latLng, map:map, title:'Zagamotos', icon:image}); //cali
+                
+                var marker2 = new google.maps.Marker({position: latLng2, map:map, title:'Zagamotos', icon:image}); //cartago
+                
+                var marker3 = new google.maps.Marker({position: latLng3, map:map, title:'Zagamotos', icon:image}); //tulua
+                
+                var marker4 = new google.maps.Marker({position: latLng4, map:map, title:'Zagamotos', icon:image}); //la 30
+                
+                var marker5 = new google.maps.Marker({position: latLng5, map:map, title:'Zagamotos', icon:image}); //la 21
+                
+                var marker6 = new google.maps.Marker({position: latLng6, map:map, title:'Zagamotos', icon:image}); //caracas1
+                
+                var marker7 = new google.maps.Marker({position: latLng7, map:map, title:'Zagamotos', icon:image}); //caracas2
+                
+
+                var colores = [
+                    {
+                        featureType: "all",
+                        elementType: "all",
+                        stylers: [
+                            { saturation: -70 }
+                        ]
+                    }
+                ];
+
+                var estilo = new google.maps.StyledMapType(colores);
+                map.mapTypes.set('mapa', estilo);
+                map.setMapTypeId('mapa');
+
+            }
+                    
+    </script>
+       
+     
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI9uuxQzXzIlNv_ZcT7n4yq20jdG9ive8&callback=initMap"
+    async defer></script>
+-->
+          
+<!--------------------------------------------Mapbox          -->
+<!--
+  var latLng = {lat:3.4936985, lng:-76.519398};//cali
+                var latLng2 = {lat:4.745375, lng:-75.911260};//cartago
+                var latLng3 = {lat:4.084981, lng:-76.196365};//tulua 
+                var latLng4 = {lat:4.811944, lng:-75.707156};//la 30 
+                var latLng5 = {lat:4.810576, lng:-75.696419};//la 21 
+                var latLng6 = {lat:4.609690, lng:-74.075854};//caracas bogotá
+                var latLng7 = {lat:4.6647339, lng:-74.0613689};//caracas2 bogotá
+-->
+   
+   <script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZWR3YXJkZmZpZ3Vlcm9hIiwiYSI6ImNqa3N3aTdrcDQ4d2Mza3A5MGJxZm8xdTYifQ.Ib3MqTqn1_H0oAcdH8bP3A';
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [-75.225427, 4.423240],
+    zoom: 6.5
+});
+
+map.on('load', function () {
+    
+     map.loadImage('images/mapicon.png', function(error, image) {
+          if (error) throw error;
+         map.addImage('cat', image);
+    // Add a layer showing the places.
+    map.addLayer({
+        "id": "places",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [{
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<h4>Zagamotos Cali</h4><p>Calle 70 Norte #4A-03 Esquina Local 1<br>Tel: (2) 664 9447<br>Cel: 310 564 5712</p>",
+                        "icon": "theatre"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-76.519398, 3.4936985]//cali
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<h4>Zagamotos Cartago</h4><p>Carrera 9 # 9 – 99<br>Tel: (2) 210 9595 <br>Cel: 310 245 5218</p>",
+                        "icon": "theatre"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-75.911260, 4.745375]//cartago
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<h4>Zagamotos Tuluá</h4><p>Calle 26 # 26 – 76 <br>Tel: (2) 225 7136 <br>Cel: 310 245 2873</p>",
+                        "icon": "bar"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-76.196365, 4.084981]//tulua
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<h4>Zagamotos La 30</h4><p>Av. 30 de agosto # 33 – 53  <br>Tel: (6) 326 7385  <br>Cel: 310 245 2847</p>",
+                        "icon": "art-gallery"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-75.707156, 4.811944]//la 30 
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description": "<h4>Zagamotos La 21</h4><p>Calle 21 # 12-12 <br>Tel: (6) 341 3344 <br>Cel: 321 429 2727</p>",
+                        "icon": "bicycle"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-75.696419, 4.810576]//la 21 
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description":  "<h4>Zagamotos Restrepo</h4><p>Av. Caracas # 20-01 Sur <br>Tel: (1) 745 6982 ext. 510-521 <br>Cel: 321 428 6593</p>",
+                        "icon": "star"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-74.075854,4.609690]//caracas bogotá
+                    }
+                }, {
+                    "type": "Feature",
+                    "properties": {
+                        "description":  "<h4>Zagamotos Héroes</h4><p>Av. Caracas # 76-01 <br>Tel: (1) 745 6982 ext. 505-506 <br>Cel: 310 246 3649</p>",
+                        "icon": "music"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-74.0613689, 4.6647339]//caracas2 bogotá
+                    }
+                }]
+            }
+        },
+        "layout": {
+            "icon-image": "cat",
+             "icon-size": 0.85,
+//            "icon-image": "{icon}-15",
+            "icon-allow-overlap": true
+        }
+    });
+
+    // When a click event occurs on a feature in the places layer, open a popup at the
+    // location of the feature, with description HTML from its properties.
+    map.on('click', 'places', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.description;
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map);
+    });
+
+    // Change the cursor to a pointer when the mouse is over the places layer.
+    map.on('mouseenter', 'places', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'places', function () {
+        map.getCanvas().style.cursor = '';
+    });
+});
+    });
+</script>
+    
+                
+    
+</body>
+</html>

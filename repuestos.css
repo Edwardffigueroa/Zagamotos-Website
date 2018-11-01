@@ -1,0 +1,172 @@
+.mainRepuestos{
+    
+    background-color: white;
+    
+    width: 70%;
+    
+    
+    
+}
+
+
+.gridTopMenu{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+/*    margin-bottom: 20px;*/
+       
+}
+
+.button{
+    
+    width: 25%;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+    background-color: black;
+    color: white;
+    padding: 28px 13px;
+    margin: 30px;
+    
+    border-radius: 15px;
+    
+    list-style-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    
+    
+}
+
+.button:hover{
+    opacity: 0.8;
+    transition: all .2s linear;
+}
+
+.servicio{
+    
+    background-image: url(images/servicio_menu_icon.jpg);
+     
+        
+    
+}
+
+.repuestos{
+    
+    background-image: url(images/repuestos_menu_img.jpg);
+    
+}
+
+.accesorios{
+    
+    
+    background-image: url(images/acesorios_menu_img.jpg);
+}
+
+
+.button h2{
+    
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.0em;
+    color: white;
+    
+}
+
+
+.button hr{
+    
+    width: 20%;
+    border: solid;
+    border-width: 2px;
+    color: white;
+}
+
+.button hr:hover{
+    
+    width: 70%;
+    transition: all .2s linear;
+    
+}
+
+.banner-repuesto{
+    width: 100%;
+    
+}
+
+.banner-repuesto img{
+    width: 100%;
+}
+
+.mainRepuestos  a{
+    
+    text-align: center;
+    
+    color: darkslategray;
+}
+
+.text-repuestos{
+    
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: space-around;
+    color: darkred;
+    
+    
+}
+
+.text-repuestos a{
+    color: darkred;
+}
+
+.text-repuestos spam{
+    width: 30%;
+}
+
+
+    
+
+.text-repuestos spam hr{
+    border: solid;
+    border-width: 1px;
+    border-color: darkgray;
+}
+
+.selected hr{
+    
+    width: 70%;
+    border-color: red;
+}
+
+
+@media only screen and (max-width: 900px) {
+    
+    .mainRepuestos{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .button{
+        width: 30%;
+        padding: 10px;
+        margin: 15px;
+        justify-content: center;
+    }
+
+    
+}
+
+
+
+
+

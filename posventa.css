@@ -1,0 +1,48 @@
+.mainposventa{
+    
+    width: 70%;
+    background: white;
+    
+}
+
+.mainposventa a{
+    
+    padding: 20vh 0px;
+    margin: 20px;
+    
+    
+}
+
+
+.mainposventa .button{
+    width: 30%;
+}
+
+
+@media only screen and (max-width: 900px) {
+    
+    .mainposventa{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .gridTopMenu{
+        flex-direction: column;
+        
+    }
+    
+    .mainposventa a{
+     padding: 10vh 0px;
+        
+    }
+    
+    .mainposventa .button{
+        width: 100%;
+        margin: 2px 0px;
+    }
+    
+    
+}

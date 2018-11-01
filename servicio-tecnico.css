@@ -1,0 +1,88 @@
+.mainServicioTecnico{
+    
+    background-color: white;
+    
+    width: 70%;
+
+}
+
+.gridicons{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+    padding: 25px 15px;
+    border-top: solid;
+     border-bottom: solid;
+/*    padding-bottom: 12px;*/
+    border-bottom-color: #808080;
+    border-width: 1px;
+    
+    
+    margin-bottom: 20px;
+    
+    
+}
+
+.gridicons img{
+    
+/*    width: 10%;*/
+/*    height: 100%;*/
+    
+}
+
+video{
+    
+    width: 100%;
+    
+}
+.mainServicioTecnico >h2{
+    
+    padding: 20px;
+    text-align: center;
+}
+
+.mainServicioTecnico p{
+    
+    line-height: 2.1;
+    padding: 15px;
+    color: dimgray;
+    
+    
+}
+
+.mainServicioTecnico a{
+    color: gray;
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .mainServicioTecnico{
+        width: 100%;
+    }
+    
+    .gridicons{
+        width: 100%;
+        padding: 10px 0px;
+    }
+    
+    .gridicons img{
+        width: 10%;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    
+    
+    
+}
+
+
+
+

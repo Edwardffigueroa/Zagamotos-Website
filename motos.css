@@ -1,0 +1,221 @@
+.mainMotos{
+    
+ width: 70%;   
+    
+/*    margin-top: 20%;*/
+    background-color: white;
+    
+}
+
+.mainMotos h1{
+    
+    
+    margin-top: 15px;
+    margin-left: 0px;
+    
+    width: 100%;
+    text-align: left;
+    
+    padding-left: 5px;    
+    padding-bottom: 12px;
+    border-bottom-color: darkslategray;
+    border-width: 1px;
+    
+    font-weight: 600;
+    font-size: 1em;
+    
+}
+
+.menuMotos{
+        
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+/*    justify-content: space-between;*/
+    
+    border-top: solid;
+    padding-bottom: 12px;
+    border-bottom-color: darkslategray;
+    border-width: 1px;
+}
+
+.menuMotos a {
+    
+/*    font-size: 1.5em;*/
+    padding: 10px 25px;
+    margin:  20px;
+    border-radius: 7px;
+    font-weight: 400;
+    
+}
+
+
+.auto{
+    
+    background-color: #FF0000;
+     color: white;
+}
+
+.semi{
+     background-color: #FF0000;
+     color: white;
+}
+
+.super{
+    background-color: #FF6800;
+    color: white;
+}
+
+.turis{
+    background-color: #FF6800;
+    color: white;
+}
+.carg{
+    background-color: #FF6800;
+    color: white;
+}
+.motoc{
+     background-color: #FF6800;
+    color: white;
+}
+
+.endur{
+    background-color: #FFA70D;
+    color: white;
+}
+
+.street{
+     
+    background-color: #FFCA00;
+    color: darkslategray;
+
+}
+
+.titleCategory{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    padding: 15px;
+    border-top: solid;
+     border-bottom: solid;
+    padding-bottom: 12px;
+    border-bottom-color: lightcoral;
+    border-top-color: lightcoral;
+    border-width: 1px;
+}
+
+.titleCategory h2{
+    
+    font-weight: 600;
+}
+
+.circle{
+    
+ height: 13px;
+  width: 13px;
+/*  background-color: #555;*/
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.motoList{
+    
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+.motoList a img{
+    
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    
+}
+
+.motoList a{
+    
+    padding: 0px;
+    margin: 5px;
+    width: 45%;
+    display: flex;
+    
+
+    text-align: center;
+}
+
+
+
+#top{
+    display: none;
+}
+
+.headerfixed{
+    display: none;
+}
+
+/*-------------------Responsive------*/
+
+@media only screen and (max-width: 900px) {
+    
+    .mainMotos{
+        width: 100%;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .menuMotos{
+        
+    }
+    .menuMotos a {
+        width: 100%;
+        margin: 3px;
+    }
+    
+    .motoList a{
+     width: 95%;   
+    }
+    
+    #top{
+        
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 8px 0px;
+        background-color: green;
+        color: white;
+        
+    }
+        
+    .headerfixed{
+        opacity: 0.8;
+        display: block;
+        margin-top: 118px;
+/*        margin-top: 100vh;*/
+        
+        position: fixed;
+        z-index: 80;
+        
+    }
+    
+    .mainMotos h1{
+        padding: 0px;
+        margin: 8px 0px;
+    }
+    
+    
+    
+}
+
+
+
+

@@ -1,0 +1,89 @@
+.mainAliados{
+    
+    background-color: white;
+    
+    width: 70%;
+    
+    }
+    
+
+.imgAliados{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.imgAliados img{
+     width: 40%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.mainAliados h3{
+    
+    text-align: center;
+    padding: 30px;
+
+}
+
+.mainAliados hr{ 
+    
+    text-align: center;
+    border: solid;
+    border-color: #C1C1C1;
+    
+    border-width: 1px;
+    width: 100%;
+    
+}
+
+/*contacto section*/
+
+.contactoSection{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+    
+}
+.contactoSection a{
+    color: black;
+    margin: 5px;
+}
+
+.contactoSection img{
+    margin: 5px;
+}
+
+.puntosbtn{
+    margin: 5px;
+    padding: 8px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+}
+
+.puntosbtn a{
+    color: white;
+    
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .mainAliados{
+        width: 100%;
+    }
+    
+    
+    
+}
+
+
+
+
+
+
+    
